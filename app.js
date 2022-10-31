@@ -10,8 +10,8 @@
 
 var taskInput=document.getElementById("new-task");//Add a new task.
 var addButton=document.getElementsByTagName("button")[0];//first button
-var incompleteTaskHolder=document.getElementById("incomplete-tasks");//ul of #incomplete-tasks
-var completedTasksHolder=document.getElementById("completed-tasks");//completed-tasks
+var incompleteTaskHolder=document.querySelector(".incomplete__ul");//ul of #incomplete-tasks
+var completedTasksHolder=document.querySelector(".completed__ul");//completed-tasks
 
 
 //New task list item
@@ -35,16 +35,16 @@ var createNewTaskElement=function(taskString){
     listItem.className="task-unit";
 
     label.innerText=taskString;
-    label.id = "task-label";
     label.className='task';
+    label.className= "label";
 
     //Each elements, needs appending
     checkBox.type="checkbox";
-    checkBox.id = "check";
+    checkBox.className = "check";
 
     editInput.type="text";
-    editInput.id = "task-input";
     editInput.className="task";
+    editInput.className = "input";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
     editButton.className="button edit";
@@ -89,8 +89,8 @@ var editTask=function(){
 
     var listItem=this.parentNode;
 
-    var editInput=listItem.querySelector("#task-input");
-    var label=listItem.querySelector("#task-label");
+    var editInput=listItem.querySelector(".input");
+    var label=listItem.querySelector(".label");
     var editBtn=listItem.querySelector(".edit");
     var containsClass=listItem.classList.contains("edit-mode");
     //If class of the parent is .edit-mode
