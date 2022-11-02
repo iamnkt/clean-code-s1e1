@@ -1,63 +1,63 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Todo App</title>
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
-</head>
-<body class="body">
-  <header class="header">
-    <img src="./eisenhower-matrix.jpg" alt="Eisenhower matrix">
-    <a class="more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">
-      Want more details?
-    </a>
-  </header>
-  <main class="main">
-    <section class="add">
-      <label for="new-task" class="name add__label">Add Item</label>
-      <div class="add__task-wrapper">
-        <input id="new-task" class="task add__input" type="text">
-        <button class="button add__button">Add</button>
-      </div>
-    </section>
-    <section class="incomplete">
-      <h3 class="name incomplete__header">Todo</h3>
-      <ul class="tasks incomplete__ul">
-        <li class="task-unit incomplete__li">
-          <input type="checkbox" class="check incomplete__check">
-          <label class="task label incomplete__label">Pay Bills</label>
-          <input type="text" class="task input incomplete__input">
-          <button class="button edit incomplete__button">Edit</button>
-          <button class="button delete incomplete__button">
-            <img class="delete-img incomplete__img" src="./remove.svg" alt="Delete">
-          </button>
-        </li>
-        <li class="task-unit edit-mode incomplete__li">
-          <input type="checkbox" class="check incomplete__check">
-          <label class="task label incomplete__label">Go Shopping</label>
-          <input type="text" value="Go Shopping" class="task input incomplete__input">
-          <button class="button edit incomplete__button">Save</button>
-          <button class="button delete incomplete__button">
-            <img class="delete-img incomplete__img" src="./remove.svg" alt="Delete">
+  <head>
+    <title>Todo App</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+  </head>
+  <body class="body">
+    <header class="header">
+      <img src="./eisenhower-matrix.jpg" alt="Eisenhower matrix">
+      <a class="more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">
+        Want more details?
+      </a>
+    </header>
+    <main class="main">
+      <section class="add">
+        <label for="new-task" class="name add__label">Add Item</label>
+        <div class="add__task-wrapper">
+          <input id="new-task" class="task add__input" type="text">
+          <button class="button add__button">Add</button>
+        </div>
+      </section>
+      <section class="incomplete">
+        <h3 class="name incomplete__header">Todo</h3>
+        <ul class="tasks incomplete__ul">
+          <li class="task-unit incomplete__li">
+            <input type="checkbox" class="check incomplete__check">
+            <label class="task label incomplete__label">Pay Bills</label>
+            <input type="text" class="task input incomplete__input">
+            <button class="button edit incomplete__button">Edit</button>
+            <button class="button delete incomplete__button">
+              <img class="delete-img incomplete__img" src="./remove.svg" alt="Delete">
+            </button>
+          </li>
+          <li class="task-unit edit-mode incomplete__li">
+            <input type="checkbox" class="check incomplete__check">
+            <label class="task label incomplete__label">Go Shopping</label>
+            <input type="text" value="Go Shopping" class="task input incomplete__input">
+            <button class="button edit incomplete__button">Save</button>
+            <button class="button delete incomplete__button">
+              <img class="delete-img incomplete__img" src="./remove.svg" alt="Delete">
+            </button>
+          </li>
+        </ul>
+      </section>
+      <section class="completed">
+      <h3 class="name completed__header">Completed</h3>
+      <ul class="tasks completed__ul">
+        <li class="task-unit completed__li">
+          <input type="checkbox" class="check completed__check" checked>
+          <label class="task label completed__label">See the Doctor</label>
+          <input type="text" class="task input completed__input">
+          <button class="button edit completed__button">Edit</button>
+          <button class="button delete completed__button">
+            <img class="delete-img completed__img" src="./remove.svg" alt="Delete">
           </button>
         </li>
       </ul>
-    </section>
-    <section class="completed">
-    <h3 class="name completed__header">Completed</h3>
-    <ul class="tasks completed__ul">
-      <li class="task-unit completed__li">
-        <input type="checkbox" class="check completed__check" checked>
-        <label class="task label completed__label">See the Doctor</label>
-        <input type="text" class="task input completed__input">
-        <button class="button edit completed__button">Edit</button>
-        <button class="button delete completed__button">
-          <img class="delete-img completed__img" src="./remove.svg" alt="Delete">
-        </button>
-      </li>
-    </ul>
-    </section>
-  </main>
-<script src="app.js"></script>
-</body>
+      </section>
+    </main>
+  <script src="app.js"></script>
+  </body>
 </html>
