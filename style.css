@@ -71,7 +71,7 @@ button {
 }
 
 .button:hover {
-    color: #3a3a3a;
+  color: #3a3a3a;
 }
 
 /* Heading */
@@ -100,7 +100,7 @@ button {
 }
 
 .task__input:focus {
-    color: #333;
+  color: #333;
 }
 
 /* New Task */
